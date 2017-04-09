@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PrefecController@index');
+Route::get('/about', 'PrefecController@about');
+Route::get('/search', 'PrefecController@search');
